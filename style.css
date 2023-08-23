@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width=100px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, black,navy,purple,black);
+    /* background: linear-gradient(135deg, white,rgb(109, 216, 235),rgb(8, 8, 88),pink,r16, 235));
+    /* background: linear-gradient(135deg, rgb(236, 156, 9),navy,black,white,rgb(98, 5, 98));gb(109, 216, 235),white); */
+    /* background: linear-gradient(135deg,rgb(109, 216, 235),rgb(8, 8, 88),pink,rgb(8, 8, 88),rgb(109, 2 */ 
+    padding: 10px;
+}
+
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background:whitesmoke;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo img{
+    width: 70px;
+    margin-left:10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(241, 204, 109);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+
+
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:rgb(59, 180, 214);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url(Task1/Image/checkbox-blank-circle-outline-checkbox-edit-icon-with-png-616457.png);
+    background-size: cover;
+    background-position: center;
+    top: 11px;
+    font-size: 20px;
+    left: 8px;
+
+    
+}
+ul li.checked{
+    color: black;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Task1/Image/download.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background:red;
+    border-radius: 12px;
+}
